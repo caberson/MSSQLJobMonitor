@@ -1,0 +1,21 @@
+MS SQL Job Monitor
+
+How did this project come about
+===============================
+For my job, we use MS SQL heavily and we deal with many SQL jobs for our projects.  We found on rare occasions, the SQL job would get stuck in a running state for days without us knowing.  Not wanting to check the job status daily, I created two stored procedures.  Used together, they can perform actions when a specified job exceeds the desired running time.  In our case, we email the team by calling a VB email script on the SQL server.  (VB email script not included in the project)
+
+Project files
+=============
+* spUtility_addJobMonitor.sql
+* spUtility_isSQLJobStillRunning.sql
+* README
+
+Requirements
+============
+* MS SQL 2008 (tested) and may possibly work on MS SQL 2005 too.
+* DBO access to the MSDB database.  May work with less access too but I have not tried to play with it.
+* Ability to create stored procedures in the database that you want the two stored procedures stored.
+
+Installation
+============
+Execute the two SQL scripts in the database you desire.  The scripts only does create.  If you are updating older versions or already have stored procedures with the same names, please remember to drop them first.  The scripts places the stored procedures into the "dbo" schema.  Feel free to change them according to your needs.
