@@ -31,6 +31,7 @@ of the authors and should not be interpreted as representing official policies,
 either expressed or implied, of the FreeBSD Project.
 */
 -- =============================================
+-- Version: 1.0
 -- Description: Adds a one-time running monitor job
 -- =============================================
 /*

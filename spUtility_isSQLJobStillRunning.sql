@@ -31,7 +31,8 @@ of the authors and should not be interpreted as representing official policies,
 either expressed or implied, of the FreeBSD Project.
 */
 -- =============================================
--- Checks whether a SQL job is running
+-- Version: 1.0
+-- Description: Checks whether a SQL job is running
 -- =============================================
 /*
 Usage example: 
